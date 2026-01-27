@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        form {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .lembrar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .lembrar input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .esqueci {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .esqueci a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Faça Login</h1>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" required>
+        <div class="lembrar">
+            <input type="checkbox" id="lembrar">
+            <label for="lembrar">Lembrar-me</label>
+        </div>
+        <button type="submit">Entrar</button>
+        <div class="esqueci">
+            <a href="#">Esqueceu a senha?</a>
+        </div>
+    </form>
+</body>
+</html>
